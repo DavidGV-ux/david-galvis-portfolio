@@ -6,7 +6,8 @@ Portafolio bilingüe (ES/EN) de David Galvis, desarrollador full-stack y CTO de 
 
 ## Contenido
 
-- `index.html` — sitio completo, con estilos y JavaScript embebidos.
+- `index.html` — estructura, contenido bilingüe y JavaScript del sitio.
+- `styles.css` — sistema visual, layout responsive y animaciones.
 - `assets/` — capturas de fYN y del portafolio 3D, además de la imagen Open Graph.
 - `cv-david-galvis.pdf` — CV en español (1 página).
 - `cv-david-galvis-en.pdf` — CV en inglés (1 página).

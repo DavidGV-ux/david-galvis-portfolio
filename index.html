@@ -6,7 +6,7 @@
   <title>David Galvis — Desarrollador Full-Stack | Angular, Node.js, AWS</title>
   <meta name="description" content="Portafolio de David Stiventh Galvis Vergara. Desarrollador full-stack y CTO en fYN: Angular, Node.js, AWS serverless, PostgreSQL e IA aplicada.">
   <meta name="author" content="David Stiventh Galvis Vergara">
-  <meta name="theme-color" content="#0b0b0c">
+  <meta name="theme-color" content="#08080a">
   <meta name="color-scheme" content="dark">
 
   <meta property="og:type" content="website">
@@ -27,7 +27,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -1378,8 +1378,11 @@
       a { color: #111; }
     }
   </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<div class="scroll-progress" aria-hidden="true"></div>
 
 <a class="skip-link" href="#main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
 
@@ -1428,7 +1431,7 @@
         <span data-es="Abierto a prácticas y roles junior · Remoto / Colombia" data-en="Open to internships and junior roles · Remote / Colombia">Abierto a prácticas y roles junior · Remoto / Colombia</span>
       </p>
 
-      <h1 id="hero-title" data-es-html="Construyo software que <em>llega a producción.</em>" data-en-html="I build software that <em>ships to production.</em>">Construyo software que <em>llega a producción.</em></h1>
+      <h1 id="hero-title" data-es-html="Software<br>que llega a<br><span class='accent'>producción.</span>" data-en-html="Software<br>that ships to<br><span class='accent'>production.</span>">Software<br>que llega a<br><span class="accent">producción.</span></h1>
 
       <p class="lead" data-es="Soy David, desarrollador full-stack y CTO de fYN, una app de finanzas personales con IA que corre por WhatsApp, web y móvil. Diseño, construyo y opero el producto completo: Angular, Node.js, AWS serverless, PostgreSQL y LLMs." data-en="I'm David, a full-stack developer and CTO at fYN, an AI-powered personal finance app running on WhatsApp, web, and mobile. I design, build, and operate the whole product: Angular, Node.js, serverless AWS, PostgreSQL, and LLMs.">Soy David, desarrollador full-stack y CTO de fYN, una app de finanzas personales con IA que corre por WhatsApp, web y móvil. Diseño, construyo y opero el producto completo: Angular, Node.js, AWS serverless, PostgreSQL y LLMs.</p>
 
@@ -1490,26 +1493,33 @@
     </div>
   </div>
 
-  <section class="section wrap" id="work">
+  <section class="section wrap section-light" id="work">
     <div class="section-head reveal">
-      <div class="section-index" data-es="01 — Trabajo" data-en="01 — Work">01 — Trabajo</div>
+      <div class="section-index" data-es="Trabajo seleccionado" data-en="Selected work">Trabajo seleccionado</div>
       <div>
-        <h2 data-es-html="Producto real, <em>no demos.</em>" data-en-html="Real product, <em>not demos.</em>">Producto real, <em>no demos.</em></h2>
-        <p data-es="Una selección de lo que he construido y operado. Cada proyecto incluye la decisión técnica que más cambió el resultado." data-en="A selection of what I've built and operated. Each project includes the technical decision that changed the outcome most.">Una selección de lo que he construido y operado. Cada proyecto incluye la decisión técnica que más cambió el resultado.</p>
+        <h2 data-es="Productos reales." data-en="Real products.">Productos reales.</h2>
+        <p data-es="Una selección de lo que he construido, desplegado y operado. Cada proyecto incluye la decisión técnica que más cambió el resultado." data-en="A selection of what I've built, shipped, and operated. Each project includes the technical decision that changed the outcome most.">Una selección de lo que he construido, desplegado y operado. Cada proyecto incluye la decisión técnica que más cambió el resultado.</p>
       </div>
     </div>
 
     <div class="work-grid">
 
-      <article class="project wide reveal">
-        <div class="project-media">
-          <span class="media-badge" data-es="En producción" data-en="In production">En producción</span>
-          <img src="assets/fyn.png" alt="Captura de la landing de fYN, finanzas personales con IA" data-es-alt="Captura de la landing de fYN, finanzas personales con IA" data-en-alt="Screenshot of the fYN landing page, AI-powered personal finance" width="800" height="520" loading="lazy">
+      <article class="project project--fyn reveal">
+        <div class="project-media media-fyn">
+          <figure class="browser-shot">
+            <div class="browser-bar" aria-hidden="true">
+              <span class="browser-dots"><i></i><i></i><i></i></span>
+              <span class="browser-url">d133uvy2su9xyr.cloudfront.net</span>
+            </div>
+            <div class="browser-screen">
+              <img src="assets/fyn.png" alt="Captura de la landing de fYN, finanzas personales con IA" data-es-alt="Captura de la landing de fYN, finanzas personales con IA" data-en-alt="Screenshot of the fYN landing page, AI-powered personal finance" width="800" height="520" loading="lazy">
+            </div>
+          </figure>
         </div>
         <div class="project-body">
           <div class="project-kicker" data-es="CTO · 2026 — hoy" data-en="CTO · 2026 — now">CTO · 2026 — hoy</div>
           <h3>fYN — <span data-es="Finanzas personales con IA" data-en="AI-powered personal finance">Finanzas personales con IA</span></h3>
-          <p data-es="Una fintech que convierte WhatsApp en un asistente financiero: presupuesto, alertas y reportes automáticos, con web y app móvil." data-en="A fintech that turns WhatsApp into a financial assistant: budgeting, alerts, and automated reports, plus web and mobile apps.">Una fintech que convierte WhatsApp en un asistente financiero: presupuesto, alertas y reportes automáticos, con web y app móvil.</p>
+          <p data-es="Una app de finanzas personales que convierte WhatsApp en un asistente financiero: presupuesto, alertas y reportes automáticos, con web y app móvil." data-en="A personal finance app that turns WhatsApp into a financial assistant: budgeting, alerts, and automated reports, plus web and mobile apps.">Una app de finanzas personales que convierte WhatsApp en un asistente financiero: presupuesto, alertas y reportes automáticos, con web y app móvil.</p>
           <ul>
             <li data-es="3 canales: WhatsApp, web y móvil" data-en="3 channels: WhatsApp, web, and mobile">3 canales: WhatsApp, web y móvil</li>
             <li data-es="10 crons + 100+ checks automatizados" data-en="10 crons + 100+ automated checks">10 crons + 100+ checks automatizados</li>
@@ -1527,8 +1537,8 @@
         </div>
       </article>
 
-      <article class="project wide reverse reveal">
-        <div class="project-media visual">
+      <article class="project project--reserva reveal">
+        <div class="project-media visual visual-reserva">
           <div class="mock-window" aria-hidden="true">
             <div class="mock-top"><b>ReservaYa</b><span class="mock-pill">Owner</span></div>
             <div class="calendar">
@@ -1563,7 +1573,7 @@
         </div>
       </article>
 
-      <article class="project reveal">
+      <article class="project project--voxy reveal">
         <div class="project-media visual visual-voxy">
           <div class="voice-card" aria-hidden="true">
             <div class="wave">
@@ -1591,7 +1601,7 @@
         </div>
       </article>
 
-      <article class="project reveal">
+      <article class="project project--winai reveal">
         <div class="project-media visual visual-winai">
           <div class="phone" aria-hidden="true">
             <div class="phone-screen">
@@ -1622,10 +1632,17 @@
         </div>
       </article>
 
-      <article class="project reveal">
-        <div class="project-media">
-          <span class="media-badge" data-es="Cliente" data-en="Client">Cliente</span>
-          <img src="assets/portfolio-3d.png" alt="Captura del portafolio 3D de Alejandra Mendivelso en modo lista" data-es-alt="Captura del portafolio 3D de Alejandra Mendivelso en modo lista" data-en-alt="Screenshot of Alejandra Mendivelso's 3D portfolio in list mode" width="1440" height="900" loading="lazy">
+      <article class="project project--3d reveal">
+        <div class="project-media media-3d">
+          <figure class="browser-shot">
+            <div class="browser-bar" aria-hidden="true">
+              <span class="browser-dots"><i></i><i></i><i></i></span>
+              <span class="browser-url">portafolio-murex-three-99.vercel.app</span>
+            </div>
+            <div class="browser-screen">
+              <img src="assets/portfolio-3d.png" alt="Captura del portafolio 3D de Alejandra Mendivelso en modo lista" data-es-alt="Captura del portafolio 3D de Alejandra Mendivelso en modo lista" data-en-alt="Screenshot of Alejandra Mendivelso's 3D portfolio in list mode" width="1440" height="900" loading="lazy">
+            </div>
+          </figure>
         </div>
         <div class="project-body">
           <div class="project-kicker" data-es="Cliente · 2026" data-en="Client · 2026">Cliente · 2026</div>
@@ -1645,8 +1662,8 @@
         </div>
       </article>
 
-      <article class="project reveal">
-        <div class="project-media visual">
+      <article class="project project--a11y reveal">
+        <div class="project-media visual visual-a11y">
           <div class="mini-terminal" aria-hidden="true">
             <p><span class="prompt">$</span>./setup --voice</p>
             <p class="dim">escuchando...</p>
@@ -1673,7 +1690,7 @@
         </div>
       </article>
 
-      <article class="project reveal">
+      <article class="project project--other reveal">
         <div class="project-body">
           <div class="project-kicker" data-es="Más" data-en="More">Más</div>
           <h3 data-es="Otros proyectos" data-en="Other projects">Otros proyectos</h3>
@@ -1690,11 +1707,11 @@
     </div>
   </section>
 
-  <section class="section wrap" id="stack">
+  <section class="section wrap section-light" id="stack">
     <div class="section-head reveal">
-      <div class="section-index" data-es="02 — Stack" data-en="02 — Stack">02 — Stack</div>
+      <div class="section-index" data-es="Herramientas" data-en="Tools">Herramientas</div>
       <div>
-        <h2 data-es-html="Herramientas que uso <em>para construir.</em>" data-en-html="Tools I use <em>to build.</em>">Herramientas que uso <em>para construir.</em></h2>
+        <h2 data-es="Herramientas que uso." data-en="Tools I use.">Herramientas que uso.</h2>
         <p data-es="No es una lista de cursos: es lo que he usado para construir, desplegar y operar." data-en="Not a course list: this is what I've used to build, deploy, and operate.">No es una lista de cursos: es lo que he usado para construir, desplegar y operar.</p>
       </div>
     </div>
@@ -1786,38 +1803,67 @@
     </div>
   </section>
 
-  <section class="section wrap" id="principles">
-    <div class="section-head reveal">
-      <div class="section-index" data-es="03 — Cómo trabajo" data-en="03 — How I work">03 — Cómo trabajo</div>
-      <div>
-        <h2 data-es-html="Criterio antes que <em>código.</em>" data-en-html="Judgment before <em>code.</em>">Criterio antes que <em>código.</em></h2>
-      </div>
-    </div>
+  <section class="process" id="principles">
+    <div class="wrap process-wrap">
+      <div class="process-copy">
+        <p class="eyebrow">
+          <span class="dot" aria-hidden="true"></span>
+          <span data-es="Cómo trabajo" data-en="How I work">Cómo trabajo</span>
+        </p>
 
-    <div class="principles">
-      <article class="principle reveal">
-        <span>01</span>
-        <h3 data-es="Producto, no demo" data-en="Product, not a demo">Producto, no demo</h3>
-        <p data-es="Prefiero un flujo pequeño que funciona con datos reales a una pantalla bonita que nadie puede usar." data-en="I'd rather ship a small flow that works with real data than a pretty screen nobody can use.">Prefiero un flujo pequeño que funciona con datos reales a una pantalla bonita que nadie puede usar.</p>
-      </article>
-      <article class="principle reveal">
-        <span>02</span>
-        <h3 data-es="Mido antes de optimizar" data-en="Measure before optimizing">Mido antes de optimizar</h3>
-        <p data-es="Latencia, bundle y costo de nube. Las decisiones se defienden con números, no con intuición." data-en="Latency, bundle size, and cloud cost. Decisions are backed by numbers, not intuition.">Latencia, bundle y costo de nube. Las decisiones se defienden con números, no con intuición.</p>
-      </article>
-      <article class="principle reveal">
-        <span>03</span>
-        <h3 data-es="Documento lo que construyo" data-en="I document what I build">Documento lo que construyo</h3>
-        <p data-es="Si otra persona no puede operarlo, no está terminado. Manuales, decisiones y límites explícitos." data-en="If someone else can't operate it, it isn't done. Runbooks, decisions, and explicit limits.">Si otra persona no puede operarlo, no está terminado. Manuales, decisiones y límites explícitos.</p>
-      </article>
+        <h2 data-es-html="De la idea a <span class='accent'>producción.</span>" data-en-html="From idea to <span class='accent'>production.</span>">De la idea a <span class="accent">producción.</span></h2>
+
+        <p class="process-intro" data-es="No es una lista de pasos de manual. Es cómo llevo una idea desde el problema hasta algo que otra persona puede operar." data-en="This isn't a checklist. It's how I take an idea from the problem to something another person can operate.">No es una lista de pasos de manual. Es cómo llevo una idea desde el problema hasta algo que otra persona puede operar.</p>
+
+        <div class="process-steps">
+          <article class="process-step is-active" data-process-step="0">
+            <span class="step-number" aria-hidden="true">01</span>
+            <h3 data-es="Diseño el producto" data-en="Design the product">Diseño el producto</h3>
+            <p data-es="Empiezo por el flujo, los datos y lo que no puede fallar. La arquitectura viene después de entender el problema." data-en="I start with the flow, the data, and what cannot fail. Architecture comes after understanding the problem.">Empiezo por el flujo, los datos y lo que no puede fallar. La arquitectura viene después de entender el problema.</p>
+          </article>
+
+          <article class="process-step" data-process-step="1">
+            <span class="step-number" aria-hidden="true">02</span>
+            <h3 data-es="Construyo y mido" data-en="Build and measure">Construyo y mido</h3>
+            <p data-es="Elijo la arquitectura más simple que aguante producción. Si no puedo medir latencia, bundle o costo, no tomo la decisión." data-en="I choose the simplest architecture that can handle production. If I can't measure latency, bundle size, or cost, I don't make the call.">Elijo la arquitectura más simple que aguante producción. Si no puedo medir latencia, bundle o costo, no tomo la decisión.</p>
+          </article>
+
+          <article class="process-step" data-process-step="2">
+            <span class="step-number" aria-hidden="true">03</span>
+            <h3 data-es="Opero y documento" data-en="Operate and document">Opero y documento</h3>
+            <p data-es="Monitoreo, documento la operación y dejo límites claros. Si otra persona no puede operarlo, no está terminado." data-en="I monitor, document the operation, and leave clear limits. If someone else can't operate it, it isn't done.">Monitoreo, documento la operación y dejo límites claros. Si otra persona no puede operarlo, no está terminado.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="process-visual">
+        <div class="terminal process-terminal" aria-label="Registro de construcción" data-es-aria="Registro de construcción" data-en-aria="Build log">
+          <div class="terminal-bar" aria-hidden="true">
+            <i></i><i></i><i></i>
+            <span class="terminal-title">david@fyn — build.log</span>
+          </div>
+          <div class="terminal-body">
+            <p class="process-line" data-process-line="0"><span class="prompt">$</span> design --product fyn</p>
+            <p class="process-line" data-process-line="0"><span class="ok">✓</span> <span data-es="onboarding · presupuesto · reportes" data-en="onboarding · budgeting · reports">onboarding · presupuesto · reportes</span></p>
+
+            <p class="process-line" data-process-line="1"><span class="prompt">$</span> build --stack angular,node,aws</p>
+            <p class="process-line" data-process-line="1"><span class="ok">✓</span> <span data-es="100+ checks · ~3–4 s" data-en="100+ checks · ~3–4 s">100+ checks · ~3–4 s</span></p>
+
+            <p class="process-line" data-process-line="2"><span class="prompt">$</span> operate --region us-east-1</p>
+            <p class="process-line" data-process-line="2"><span class="ok">✓</span> <span data-es="CloudWatch · documentación" data-en="CloudWatch · documentation">CloudWatch · documentación</span></p>
+
+            <p class="cmd"><span class="prompt">$</span><span class="cursor" aria-hidden="true"></span></p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section wrap" id="experience">
+  <section class="section wrap section-light" id="experience">
     <div class="section-head reveal">
-      <div class="section-index" data-es="04 — Trayectoria" data-en="04 — Track record">04 — Trayectoria</div>
+      <div class="section-index" data-es="Trayectoria" data-en="Track record">Trayectoria</div>
       <div>
-        <h2 data-es-html="Dónde he <em>estado.</em>" data-en-html="Where I've <em>been.</em>">Dónde he <em>estado.</em></h2>
+        <h2 data-es="Dónde he estado." data-en="Where I've been.">Dónde he estado.</h2>
         <p data-es="La línea de tiempo corta: producto propio, trabajo freelance y proyectos académicos con impacto real." data-en="The short timeline: my own product, freelance work, and academic projects with real impact.">La línea de tiempo corta: producto propio, trabajo freelance y proyectos académicos con impacto real.</p>
       </div>
     </div>
@@ -1827,7 +1873,7 @@
         <div class="timeline-date">2026 — <span data-es="hoy" data-en="now">hoy</span></div>
         <div class="timeline-content">
           <h3>CTO · fYN</h3>
-          <p class="org" data-es="Fintech de finanzas personales con IA · Colombia (remoto)" data-en="AI-powered personal finance · Colombia (remote)">Fintech de finanzas personales con IA · Colombia (remoto)</p>
+          <p class="org" data-es="App de finanzas personales con IA · Colombia (remoto)" data-en="AI-powered personal finance app · Colombia (remote)">App de finanzas personales con IA · Colombia (remoto)</p>
           <p data-es-html="Lidero la arquitectura y el producto: <strong>3 canales</strong>, <strong>10 automatizaciones</strong>, <strong>100+ checks</strong> y una latencia de ~3–4 s sobre AWS serverless. También construí el frontend Angular y la app React Native/Expo." data-en-html="I lead architecture and product: <strong>3 channels</strong>, <strong>10 automations</strong>, <strong>100+ checks</strong>, and ~3–4 s latency on serverless AWS. I also built the Angular frontend and the React Native/Expo app.">Lidero la arquitectura y el producto: <strong>3 canales</strong>, <strong>10 automatizaciones</strong>, <strong>100+ checks</strong> y una latencia de ~3–4 s sobre AWS serverless. También construí el frontend Angular y la app React Native/Expo.</p>
         </div>
       </article>
@@ -1875,7 +1921,7 @@
       <span class="dot" aria-hidden="true"></span>
       <span data-es="Siguiente paso" data-en="Next step">Siguiente paso</span>
     </p>
-    <h2 data-es-html="¿Construimos algo <em>juntos?</em>" data-en-html="Shall we build something <em>together?</em>">¿Construimos algo <em>juntos?</em></h2>
+    <h2 data-es-html="Hablemos<span class='accent'>.</span>" data-en-html="Let's talk<span class='accent'>.</span>">Hablemos<span class="accent">.</span></h2>
     <p data-es="Estoy buscando prácticas profesionales o mi primer rol full-time en full-stack, cloud o IA aplicada. Remoto o híbrido. Si tienes un problema interesante, escríbeme." data-en="I'm looking for internships or my first full-time role in full-stack, cloud, or applied AI. Remote or hybrid. If you have an interesting problem, let's talk.">Estoy buscando prácticas profesionales o mi primer rol full-time en full-stack, cloud o IA aplicada. Remoto o híbrido. Si tienes un problema interesante, escríbeme.</p>
     <a class="contact-email" href="mailto:davidstiventhgalvis@gmail.com">davidstiventhgalvis@gmail.com</a>
     <div class="contact-links">
@@ -2029,15 +2075,29 @@
       mobileNav.querySelectorAll("a").forEach(function (link) {
         link.addEventListener("click", closeMenu);
       });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && mobileNav.classList.contains("is-open")) {
+          closeMenu();
+          menuToggle.focus();
+        }
+      });
     }
 
     var header = document.querySelector(".site-header");
+    var scrollProgress = document.querySelector(".scroll-progress");
     var navAnchors = document.querySelectorAll(".nav-links a");
     var sectionIds = ["work", "stack", "principles", "experience", "contact"];
 
     function onScroll() {
       if (header) {
         header.classList.toggle("is-scrolled", window.scrollY > 8);
+      }
+
+      if (scrollProgress) {
+        var scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        var progress = scrollable > 0 ? Math.min(1, Math.max(0, window.scrollY / scrollable)) : 0;
+        scrollProgress.style.transform = "scaleX(" + progress + ")";
       }
 
       var current = "";
@@ -2062,6 +2122,7 @@
     }
 
     window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
     onScroll();
 
     var reveals = document.querySelectorAll(".reveal");
@@ -2084,6 +2145,50 @@
       reveals.forEach(function (element) {
         element.classList.add("is-visible");
       });
+    }
+
+    var processSteps = Array.prototype.slice.call(document.querySelectorAll("[data-process-step]"));
+    var processLines = Array.prototype.slice.call(document.querySelectorAll("[data-process-line]"));
+    var processTerminal = document.querySelector(".process-terminal");
+
+    function setProcessStep(activeStep) {
+      processSteps.forEach(function (step, index) {
+        step.classList.toggle("is-active", index === activeStep);
+      });
+
+      processLines.forEach(function (line) {
+        var lineStep = Number(line.getAttribute("data-process-line"));
+        line.classList.toggle("is-visible", lineStep <= activeStep);
+      });
+    }
+
+    if (processSteps.length && processLines.length) {
+      if (reduceMotion || !("IntersectionObserver" in window)) {
+        processSteps.forEach(function (step) {
+          step.classList.add("is-active");
+        });
+        processLines.forEach(function (line) {
+          line.classList.add("is-visible");
+        });
+      } else {
+        if (processTerminal) {
+          processTerminal.classList.add("is-ready");
+        }
+
+        var processObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              setProcessStep(Number(entry.target.getAttribute("data-process-step")));
+            }
+          });
+        }, { rootMargin: "-42% 0px -42% 0px", threshold: 0 });
+
+        processSteps.forEach(function (step) {
+          processObserver.observe(step);
+        });
+
+        setProcessStep(0);
+      }
     }
 
     var year = document.getElementById("year");
